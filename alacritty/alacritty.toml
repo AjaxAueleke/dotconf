@@ -1,0 +1,49 @@
+
+# Font settings
+[font]
+size = 18
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+# Window settings
+[window]
+opacity = 0.95
+
+[colors.primary]
+background = '#1d2021'
+foreground = '#d4be90'
+
+[colors.cursor]
+text = '#F81CE5'
+cursor = '#ffffff'
+
+[colors.normal]
+black = "0x32302f"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
+
+[colors.bright]
+black = "0x32302f"
+red = "0xea6962"
+green = "0xa9b665"
+yellow = "0xd8a657"
+blue = "0x7daea3"
+magenta = "0xd3869b"
+cyan = "0x89b482"
+white = "0xd4be98"
+

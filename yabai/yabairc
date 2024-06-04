@@ -1,0 +1,97 @@
+yabai -m config layout bsp
+
+yabai -m config window_placement second_child
+
+# padding set to 12px
+yabai -m config bottom_padding 5
+yabai -m config top_padding 5
+yabai -m config left_padding 5
+yabai -m config right_padding 5
+yabai -m config window_gap 5
+
+# center mouse on window with focus
+yabai -m config mouse_follows_focus on
+
+# modifier for clicking and dragging with mouse
+yabai -m config mouse_modifier alt
+# set modifier + left-click drag to move window
+yabai -m config mouse_action1 move
+# set modifier + right-click drag to resize window
+yabai -m config mouse_action2 resize
+
+
+yabai -m mouse_drop_action swap
+
+# delete monocle mode lock files from previous sessions
+
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+
+# Rules
+ignored_apps=(
+  "1Password"
+  "Alfred Preferences"
+  "App Store"
+  "Bluetooth Explorer"
+  "Caprine"
+  "Couleurs"
+  "Dash"
+  "Deliveries"
+  "Ears"
+  "Finder"
+  "Flume"
+  "GitHub Desktop"
+  "Handbrake"
+  "Home"
+  "Installer"
+  "IPinator"
+  "Logi Options"
+  "Logitech Options"
+  "Lunar"
+  "Mastonaut"
+  "Messages"
+  "Messenger"
+  "Music"
+  "Parallels"
+  "Photo Booth"
+  "Pixave"
+  "Podcasts"
+  "Poolside FM"
+  "Preview"
+  "Pritunl"
+  "QuickTime Player"
+  "Reminders"
+  "Soulver 3"
+  "Stickies"
+  "Streaks"
+  "System Information"
+  "System Preferences"
+  "The Unarchiver"
+  "Things"
+  "Telegram"
+  "Transmit"
+  "Twitter"
+  "Ubar"
+  "Zoom"
+)
+
+for app in "${ignored_apps[@]}";
+do yabai -m rule --add app="${app}" manage=off;
+done;
+
+yabai -m rule --add app="Finder" title=" Info" manage=off
+yabai -m rule --add app="Finder" title="Copy" manage=off
+yabai -m rule --add app="Finder" title="Mov" manage=off
+yabai -m rule --add app="Finder" title="Trash" manage=off
+yabai -m rule --add title="Preferences" manage=off
+yabai -m rule --add app="iTunes" title="MiniPlayer" manage=off
+yabai -m rule --add app="Music" title="MiniPlayer" manage=off
+yabai -m rule --add app="Front" title="New Message" manage=off
+yabai -m rule --add app="Front" title="New Discussion" manage=off
+yabai -m rule --add app="Firefox" title="Picture-in-Picture" manage=off
+yabai -m rule --add app="Google Chrome" title="Picture in Picture" manage=off
+yabai -m rule --add app="VLC"
+yabai -m rule --add app="Transmit" title="Activity" manage=off
+
+echo "yabai configuration loaded.."

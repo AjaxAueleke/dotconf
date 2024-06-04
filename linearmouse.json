@@ -1,0 +1,73 @@
+{
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "serialNumber" : "08036028AEAB9480552529CDF5001942",
+          "productID" : "0x1b51",
+          "vendorID" : "0x1b1c",
+          "productName" : "CORSAIR DARK CORE RGB SE Wireless USB Receiver",
+          "category" : "mouse"
+        }
+      },
+      "buttons" : {
+        "universalBackForward" : false
+      },
+      "pointer" : {
+        "acceleration" : 0.5,
+        "disableAcceleration" : false,
+        "speed" : 0.075
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "speed" : {
+          "vertical" : 0
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : 1
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "serialNumber" : "18022009AF2A00025AA6ACE4F5001BC4",
+          "vendorID" : "0x1b1c",
+          "productID" : "0x1b4b",
+          "productName" : "CORSAIR DARK CORE RGB SE Gaming Mouse"
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "reverse" : {
+          "vertical" : false
+        }
+      },
+      "if" : {
+        "device" : {
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "productID" : "0x342",
+          "vendorID" : "0x5ac",
+          "category" : "trackpad"
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5"
+}
